@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    /*border: 0;*/
+    padding: 0;
+    font-family: "Comic Sans MS", cursive, sans-serif
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    background-color: #2f2f2f;
+    width: 100%;
+    position: fixed;
+    height: 54px;
+    box-shadow: 0 0 5px #2f2f2f;
+    color: white;
+    z-index: 9999;
+}
+
+#header {
+    z-index: 9000;
+}
+
+#header > * {
+    display: inline-block;
+}
+
+#header nav {
+    float: right;
+    padding-top: 20px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    height: 54px;
+}
+
+#header nav ul li {
+    display: inline-block;
+}
+
+#header nav ul li a {
+    color: white;
+    margin: 0 7px;
+    padding: 10px 0;
+    box-sizing: border-box;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#header nav ul li a:hover
+{
+    border-bottom: 1px solid white;
+}
+
+#logo {
+    background: url("images/ubuntu-logo32.png") no-repeat;
+    background-size: 45px;
+    margin-left: 8px;
+    margin-top: 4px;
+    padding-left: 49px;
+    height: 51px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 20px;
+    color: inherit;
+    line-height: 51px;
+}
+
+main {
+    padding-top: 54px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#rotator {
+    width: 100%;
+}
+
+#about {
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#about h2 {
+    padding: 4px;
+}
+
+.about-more {
+    width: 100%;
+}
+
+#details {
+    background: url("images/Forever-Shady-S.jpg") center fixed;
+    background-size: cover;
+    padding: 0 10px 20px 10px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 0 14px 0 inset;
+}
+
+#details > div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info {
+    margin-top: 20px;
+    width: 33.3333%;
+}
+
+.info img {
+    display: block;
+    margin: auto;
+    filter: brightness(100);;
+    -webkit-filter: brightness(100);
+}
+
+.info p {
+    margin-top: 10px;
+    padding: 0 10px;
+    color: #E8E8E8;
+    text-align: center;
+}
+
+#contact {
+    width: 100%;
+    padding: 10px;
+}
+
+#contact > form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contact input {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#contact input, #contact textarea {
+    margin: 5px 0;
+    padding: 5px;
+    box-sizing: border-box;
+    color: #707070;
+}
+
+#contact input[type="submit"] {
+    border: 0;
+    border-radius: 1px;
+    color: white;
+    background-color: #8c8c8c;
+}
+
+#contact-input-left {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 33.3333%;
+    padding-right: 10px;
+}
+
+#contact input {
+    width: 100%;
+ }
+
+#contact textarea {
+    width: 66.666%;
+}
+
+
+footer {
+    margin: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+@media screen and (max-width: 499px) {
+    body {
+        font-size: 16px;
+    }
+
+    #header nav {
+        display: none;
+    }
+
+    #mobile-menu-button {
+        float: right;
+        height: 54px;
+        line-height: calc(54px - 2*12px);
+        margin-right: 20px;
+        font-size: 22px;
+        padding: 12px;
+        box-sizing: border-box;
+        cursor: pointer;
+        background-color: #8c8c8c;
+    }
+
+    #mobile-menu-button:active {
+        box-shadow: 0 0 7px -1px black inset;
+    }
+
+    #mobile-menu-wrapper {
+        background-color: #8c8c8c;
+        max-height: 90vh;
+        width: 100%;
+        margin-top: -1px;
+        transform: translate(0, -400px);
+        transition: 0.3s ease-out;
+        z-index: 8000;
+        top: 54px;
+        position: fixed;
+    }
+
+    #mobile-menu-wrapper.active_menu {
+        transform: translate(0, 0);
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    nav ul li a {
+        color: white;
+        /*background-color: #DD4814;*/
+        margin-bottom: 5px;
+        padding: 10px 10px 10px 20px;
+        width: 100%;
+        display: block;
+        box-sizing: border-box;
+        border-bottom: 1px solid white;
+        border-radius: 2px;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+    }
+
+    #rotator a {
+        display: block;
+        width: inherit;
+        background: url("images/maxresdefault.jpg") center;
+        background-size: cover;
+        height: 250px;
+        position: relative;
+    }
+
+    #rotator-description{
+        color: white;
+        text-align: center;
+        background-color: rgba(0,0,0,0.5);
+        position: absolute;
+        bottom: 0;
+        width: inherit;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    #rotator-description h2 {
+        font-size: 1.2em;
+    }
+
+    #rotator-description p{
+        display: none;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .info img {
+        width: 64px;
+        height: 64px;
+    }
+
+    .info p {
+        padding: 0;
+    }
+
+    #contact-input-left {
+        width: 100%;
+        padding: 0;
+    }
+
+    #contact textarea {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 500px)  and (max-width: 799px){
+    body {
+        font-size: 16px;
+    }
+
+    #mobile-menu-button, #mobile-menu-wrapper  {
+        display: none;
+    }
+
+    #rotator a {
+        display: block;
+        width: inherit;
+        background: url("images/maxresdefault.jpg") 50% 70%;
+        background-size: cover;
+        height: 275px;
+        position: relative;
+    }
+
+    #rotator-description {
+        color: white;
+        text-align: center;
+        background-color: rgba(0,0,0,0.5);
+        position: absolute;
+        bottom: 0;
+        width: inherit;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    #rotator-description p{
+        font-size: 14px;
+    }
+
+    .info img {
+        width: 90px;
+        height: 90px;
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+    #mobile-menu-button, #mobile-menu-wrapper  {
+        display: none;
+    }
+
+    header > div {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    #rotator a {
+        display: block;
+        width: inherit;
+        background: url("images/maxresdefault.jpg") 50% 60%;
+        background-size: cover;
+        height: 300px;
+        position: relative;
+    }
+
+    #rotator-description {
+        color: white;
+        text-align: center;
+        background-color: rgba(0,0,0,0.5);
+        position: absolute;
+        bottom: 0;
+        width: inherit;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .info img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #rotator-description > div, #details > div, #about, #contact {
+        margin: 0 auto;
+        width: 800px;
+    }
+}
+/* breakpoints 500px, 800px */
