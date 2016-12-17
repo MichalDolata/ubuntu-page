@@ -7,4 +7,4 @@
 - RWD
 
 ## Live demo
-[Demo](http://dolata.me/demos/ubuntu-page/)
+[Demo](https://michaldolata.github.io/ubuntu-page/)
